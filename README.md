@@ -26,7 +26,7 @@ Serve-JS is an implementation of [midnqp/frameworkless](https://github.com/midnq
 ## 📦 Installation
 
 ```sh
-$ npm install serve
+$ npm install serve-dot-js
 ```
 
 ## 🚀 Examples
