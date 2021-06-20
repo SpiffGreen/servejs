@@ -34,12 +34,12 @@ $ npm install serve-dot-js
 ### Basic ServeJS server
 This example demonstrates the use of ServeJS for serving files from a folder.
 ```js
-const app = require("serve-js");
+const app = require("serve-dot-js");
 app.listen(3000, () => console.log(`Server started on port 3000`));
 ```
 Default folder it reads from is `Src` folder. In this folder contains the html, css and javascript files to be served. But this can be overwritten using a serveJS method. See example below.
 ```js
-const app = require("serve-js");
+const app = require("serve-dot-js");
 
 app.setView("Public"); // Changes the default folder for reading files from.
 app.listen(3000, () => console.log(`Server started on port 3000`));
@@ -50,7 +50,7 @@ Servejs allows you the freedom and flexibility to structure your apps the way yo
 See example below:
 ```js
 const http = require("http");
-const app = require("serve-js");
+const app = require("serve-dot-js");
 
 http.createServer(app.route)
     .listen(process.env.PORT ||  4000, () => console.log('Server is running on PORT 3000'));
